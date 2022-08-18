@@ -1,4 +1,18 @@
-# Frontend Mentor - Intro section with dropdown navigation
+# Frontend Mentor - Snap Intro
+This project is my solution of the [Frontend Mentor](https://www.frontendmentor.io) challenge [Intro section with dropdown navigation](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub/intro-section-with-dropdown-navigation-umCuEWRTq-).
+
+Frontend Mentor is a website with challenges that help you improve your coding skills by building realistic projects.
+This specific challenge consists basically of a navigation bar with dropdown options and a hero section. The website is fully responsive, with the navbar being collapsible on mobile. It was made using HTML, CSS and vanilla Javascript. 
+
+## Desktop Preview
+![Desktop Preview](./images/desktop-preview.png);
+
+## Mobile Preview
+![Mobile Preview](./images/mobile-preview.png);
+![Mobile Preview With Open Navbar](./images/mobile-preview-nav.png);
+
+
+<!-- # Frontend Mentor - Intro section with dropdown navigation
 
 ![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
 
@@ -90,4 +104,4 @@ We love receiving feedback! We're always looking to improve our challenges and o
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
-**Have fun building!** 🚀
+**Have fun building!** 🚀 -->
