@@ -17,15 +17,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" onclick="closeAllDropdowns()">
     <div id="overlay"></div>
     <nav>
       <div>
         <img src="images/logo.svg" width="84" height="27" class="logo" alt="" />
       </div>
+      <div class="hamburger">
+        <img src="images/icon-menu.svg" width="32" height="18" alt="">
+      </div>
       <div class="navbar">
         <div class="navbar-left">
-          <div class="navbar-item" id="features-link">
+          <div class="navbar-item" id="features-link" onclick="toggleDropdown(this, event)">
             <div class="navbar-link">
               <a>Features</a>
               <div>
@@ -52,9 +55,9 @@
             </ul>
           </div>
   
-          <div class="navbar-item" id="company-link">
+          <div class="navbar-item" id="company-link" onclick="toggleDropdown(this, event)">
             <div class="navbar-link">
-              <a href="">Company</a>
+              <a>Company</a>
               <img src="images/icon-arrow-down.svg" id="arrow-icon" width="10" height="6" alt="">
             </div>
             <ul class="dropdown">
@@ -65,10 +68,10 @@
           </div>
   
           <div class="navbar-link">
-            <a href="">Careers</a>
+            <a>Careers</a>
           </div>
           <div class="navbar-link">
-            <a href="">About</a>
+            <a>About</a>
           </div>
         </div>
         <div class="navbar-right">

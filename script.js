@@ -1,25 +1,47 @@
-var featuresLink = document.querySelector('#features-link');
-var companyLink = document.querySelector('#company-link');
+const navbar = document.querySelector('.navbar');
+const navbarItem = document.querySelectorAll('.navbar-item');
+const navButton = document.querySelector('.hamburger');
+const overlay = document.querySelector('#overlay');
 
-var arrowUpPath = 'images/icon-arrow-up.svg';
-var arrowDownPath = 'images/icon-arrow-down.svg';
+function closeLinks() {
+  navbarItem.forEach((item) => {
+    var arrow = item.querySelector('#arrow-icon');
+    var dropdown = item.querySelector('.dropdown');
 
-featuresLink.addEventListener('mouseenter', () => {
-  var arrowIcon = document.querySelector('#features-link #arrow-icon');
-  arrowIcon.src = arrowUpPath;
+    arrow.classList.remove('open');
+    dropdown.classList.remove('open');
+  });
+}
+
+function toggleDropdown(item, event) {
+  var arrow = item.querySelector('#arrow-icon');
+  var dropdown = item.querySelector('.dropdown');
+
+  if (!arrow.classList.contains('open')) {
+    closeLinks();
+    arrow.classList.add('open');
+    dropdown.classList.add('open');
+    event.stopPropagation();
+  } else {
+    closeLinks();
+  }
+}
+
+function closeAllDropdowns() {
+  closeLinks();
+}
+
+function toggleMobileNavbar() {
+  closeLinks();
+  navbar.classList.toggle('open');
+  overlay.classList.toggle('open');
+  navButton.classList.toggle('open');
+}
+
+navButton.addEventListener('click', () => {
+  toggleMobileNavbar();
 });
 
-featuresLink.addEventListener('mouseleave', () => {
-  var arrowIcon = document.querySelector('#features-link #arrow-icon');
-  arrowIcon.src = arrowDownPath;
-});
-
-companyLink.addEventListener('mouseenter', () => {
-  var arrowIcon = document.querySelector('#company-link #arrow-icon');
-  arrowIcon.src = arrowUpPath;
-});
-
-companyLink.addEventListener('mouseleave', () => {
-  var arrowIcon = document.querySelector('#company-link #arrow-icon');
-  arrowIcon.src = arrowDownPath;
+overlay.addEventListener('click', () => {
+  toggleMobileNavbar();
 });
