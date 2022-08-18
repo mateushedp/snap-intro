@@ -4,6 +4,8 @@ This project is my solution of the [Frontend Mentor](https://www.frontendmentor.
 Frontend Mentor is a website with challenges that help you improve your coding skills by building realistic projects.
 This specific challenge consists basically of a navigation bar with dropdown options and a hero section. The website is fully responsive, with the navbar being collapsible on mobile. It was made using HTML, CSS and vanilla Javascript. 
 
+## [Live URL](https://mateushedp.github.io/snap-intro/)
+
 ## Desktop Preview
 ![Desktop Preview](./images/desktop-preview.png)
 
